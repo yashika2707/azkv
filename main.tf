@@ -65,3 +65,20 @@ resource "azurerm_key_vault_secret" "example" {
   #   value     = "Release"
   # }
 #}
+
+# resource "azuredevops_variable_group" "variablegroup" {
+#   project_id   = azuredevops_project.tf-example.id
+#   name         = "myvariable"
+#   description  = "This variable group is created using Terraform"
+#   allow_access = true
+
+  # variable {
+  #   name  = "buildPlatform"
+  #   value = "Any CPU"
+  # }
+
+  # variable {
+  #   name      = "buildConfiguration"
+  #   value     = "Release"
+  # }
+#}
